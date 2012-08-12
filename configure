@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+def sh(cmd)
+  puts cmd
+  system cmd
+end
+
+def message(str)
+  puts '=' * str.size
+  puts str
+  puts '=' * str.size
+end
+
+if File.exists? 'vendor/bundle'
+  sh 'bundle update'
+else
+  sh 'gem install rake'
+  sh 'bundle install --binstubs=vendor/bin --path=vendor/bundle'
+end

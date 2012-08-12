@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo "$(ps aux | grep '[r]uby bot.rb'  | awk '{print $2}')"
+for pid in $(ps aux | grep '[r]uby bot.rb' | awk '{print $2}'); do kill $pid; done
+# kill -9 "$(ps aux | grep '[r]uby bot.rb'  | awk '{print $2}')"
+
+(sleep 30; sh start_bot) &
