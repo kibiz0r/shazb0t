@@ -154,7 +154,7 @@ VGS = {
         :path => "SelfTask",
         "c" => { :path => "Cover", :desc => "I'll cover you." },
         "d" => { :path => "Defenses", :desc => "I'll set up defenses." },
-        "f" => { :path => "DeployForcefields", :desc => "I'll deploy forcefields." },
+        "f" => { :path => "Forcefield", :desc => "I'll deploy forcefields." },
         "o" => { :path => "OnIt", :desc => "I'm on it." },
         "s" => { :path => "DeploySensors", :desc => "I'm deploying sensors." },
         "t" => { :path => "DeployTurrets", :desc => "I'm deploying turrets." },
